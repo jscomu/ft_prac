@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ft_blog/pages/home.dart';
+import 'package:ft_blog/pages/app.dart';
 
 class Beta extends StatelessWidget {
   const Beta({ Key? key }) : super(key: key);
@@ -15,7 +15,7 @@ class Beta extends StatelessWidget {
         child: ElevatedButton(
           child: Text("홈으로 이동"),
           onPressed: () {
-            Get.offAll(Home());
+            Get.offAll(App());
           },
         ),
       ),

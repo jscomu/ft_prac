@@ -3,8 +3,8 @@ import 'package:ft_blog/pages/alpha.dart';
 import 'package:ft_blog/pages/beta.dart';
 import 'package:get/get.dart';
 
-class Home extends StatelessWidget {
-  const Home({ Key? key }) : super(key: key);
+class App extends StatelessWidget {
+  const App({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ft_blog/pages/home.dart';
+import 'package:ft_blog/pages/app.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -12,8 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
+      title: "First App",
+      theme: ThemeData(
+        primaryColor: Colors.white,
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      initialRoute: "/",
+      getPages: [GetPage(name: "/", page: () => App())],
+      //debugShowCheckedModeBanner: false,
+      //home: App(),
     );
   }
 }
